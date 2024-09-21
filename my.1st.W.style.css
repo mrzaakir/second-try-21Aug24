@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css variables */
+
+:root{
+    /* Logo-color */
+    --primary-color:#16255B; 
+    /* hover-color */
+    --secondry-color:#f6a000;
+    /* bc-color */
+    --third-color:#0077b6;
+    /* 2-color-qoralada */
+    --fourth-color:#fff;
+    --fivth-color:#000;
+}
+
+body{
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Ubuntu", sans-serif;
+    /* background-color:#f6f8fb; */
+    /* background-color: #f5f7fa; */
+    /* font-family: "Permanent Marker", cursive; */
+}
+
+img{
+    width: 100%;
+    /* height: auto; */
+}
+.container{
+    width: 1110px;
+    margin-inline: auto;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+
+}
+
+.ibs{
+     font-family: "Permanent Marker", cursive;
+     /* font-family: "Permanent Marker", cursive; */
+     color: var(--fivth-color);
+     font-size: 1.5rem;
+     font-weight: bolder;
+}
+
+.ibs-text{
+    /* color: var(--primary-color); */
+    color:#16255B;
+    transform: translateX(.3s ease-in-out);
+}
+
+a{
+    color: var(--fivth-color);
+    text-decoration: none;
+}
+.navigation-bar ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 30em; */
+    margin: 0 5rem;
+    animation: all 1s ease-in-out;
+}
+
+.navigation-bar ul li{
+    padding: 0 1rem;
+    /* margin: 0 2rem; */
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+    animation: all 1s ease-in-out;
+}
+
+.navigation-bar ul li a:hover{
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--secondry-color);
+    animation: all 1s ease-in-out;
+}
+.btn{
+    display: inline;
+    margin-left: 4em;
+    background-color:var(--primary-color);
+    /* color: var(--fourth-color); */
+    color: var(--fourth-color);
+    padding: .5em;
+    border-radius: .3em;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.navigation-bar ul li a.btn:hover{
+   color: var(--fourth-color);
+   background-color: var(--secondry-color);
+   border: none;
+   transform: translateX(-10px);
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 90vh;
+    background: url(https://ibsbank.so/wp-content/uploads/2020/05/camel4-min-1-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#About{
+    /* background-color: var(--fourth-color); */
+    margin-bottom: 5rem;
+    background: url(https://ibsbank.so/wp-content/uploads/2020/04/IBS-pp-scaled.jpg);
+    width:100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #FFfffF 100%);
+}
+
+.container-abouta{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem 2rem;
+}
+
+.elment{
+    box-sizing: border-box;
+    width: 48px;
+    color: var(--secondry-color);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-top: 4px solid var(--secondry-color);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-items: self-start;
+    /* align-items: center; */
+    margin-left: 3.5em;
+}
+
+.contact h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: #19255b;
+    margin-bottom: 1rem;
+}
+
+.contact p{
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    color: #222;
+    letter-spacing: -0.9px;
+    line-height: 26px;
+    /* letter-spacing: .2px; */
+}
+
+.rm{
+    margin-top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.read{
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    letter-spacing: -0.7px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color:var(--primary-color);
+    border-radius:2.1875rem;
+    padding: 0.9375rem 2.8125rem;
+    transition: .3s ease-in-out;
+}
+
+.read:hover{
+    background-color: var(--secondry-color);
+    color: var(--fourth-color);
+    cursor: pointer;
+}
+.box-1 img{
+    width: 100%;
+    height: 100%;
+    max-width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-1 h5{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   text-transform: capitalize;
+   color: #333333;
+   margin-top: 1rem;
+   letter-spacing:1.5px; 
+}
+
+.container-ops{
+    background-color:#f5f7fa;
+    margin-top: 8.5rem;
+    padding-inline: 5rem;
+}
+
+.ops-cards{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:4rem;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.card-1 img{
+    width: 100%;
+}
+
+.card-1{
+    min-width:250px;
+
+    /* padding: 20px ; */
+    background-color: white;
+    /* width: calc(33.33% - 20px); */
+
+    padding-bottom: 5rem;
+}
+
+.card-1:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+.container-ops h3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:3.1875rem;
+    color: var(--primary-color);
+}
+
+.ops-info h2{
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.625rem;
+    color: var(--fivth-color);
+    margin-block: 1rem;
+}
+
+.ops-info p{
+    font-family: Ubuntu, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.625rem;
+    color: var(--fivth-color);
+    margin-inline:1rem;
+}
+
+.learn{
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height:1.0625rem;
+    color: var(--secondry-color);
+    cursor: pointer;
+}
+
+.learn:hover{
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height:1.0625rem;
+    color:rgb(68, 68, 68);
+}
+
+.odp-boxes{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem 8rem;
+    margin-top: 10rem;
+}
+
+.title{
+    width: 460px;
+    height: 102.646px;
+    margin-bottom: 2rem;
+}
+.odp-contact h2{
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:3.1875rem;
+    color:rgba(0, 0, 0, .8);
+
+    /* align-items: center;
+    text-align:center; */
+}
+
+.odp-contact p{
+    width:460px;
+    height: 95.167px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.25rem;
+    color:var(--fivth-color);
+}
+
+.el{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-self: self-start;
+    margin-top: .3rem;
+
+}
+
+.el .read{
+   /* width: 114.636px;
+   height: 17.000px; */
+    border:1px solid var(--secondry-color);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.25rem;
+}
+
+.el .read:hover{
+    background-color:var(--fourth-color);
+    color: #cc9955;
+}
+
+ #our-par{
+    margin-top: 5rem;
+    background-color:var(--fourth-color);
+}
+.our-par img{
+    width: 350px;
+    height: 300px;
+    margin-left: 500px;
+}
+
+.our-par .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 470px;
+}
+
+.our-par h2{
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:3.1875rem;
+    color:var(--primary-color);
+}
+
+.our-par .elment{
+    margin-left: 40rem;
+    margin-block: 1rem;
+    width: 70px;
+}
+
+.container-ft{
+    background-color:#494240;
+    height: 40vh;
+    text-align: center;
+}
+
+.ft-con h2{
+    /* text-align: center; */
+    font-family: Ubuntu, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:51px;
+    color:var(--fourth-color);
+    margin-top: 1.5rem;
+}
+
+.btns{
+    margin-top: 2.5rem;
+}
+
+.elm{
+    box-sizing: border-box;
+    width: 48px;
+    color: var(--secondry-color);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-top: 4px solid var(--secondry-color);
+    margin-top: 2.5em;
+    margin-left: 8.5em;
+}
+
+.down{
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    letter-spacing: -0.7px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color:var(--secondry-color);
+    border-radius:2.1875rem;
+    padding: 0.9375rem 2.8125rem;
+    transition: .3s ease-in-out;
+}
+
+.down:hover{
+    background-color: var(--fourth-color);
+    color:var(--secondry-color);
+    cursor: pointer;
+}
+
+.down-1{
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    letter-spacing: -0.7px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color:var(--secondry-color);
+    border-radius:2.1875rem;
+    padding: 0.9375rem 2.8125rem;
+    transition: .3s ease-in-out;
+    margin-left: 1rem;
+}
+
+.down-1:hover{
+    background-color: var(--fourth-color);
+    color:var(--secondry-color);
+    cursor: pointer;
+}
+
+.Lm{
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    letter-spacing: -0.7px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color:transparent;
+    border: 1px solid var(--fourth-color);
+    border-radius:2.1875rem;
+    padding: 0.9375rem 2.8125rem;
+    transition: .3s ease-in-out;
+    margin-left: .3rem;
+}
+.Lm:hover{
+    background-color: var(--fourth-color);
+    color:var(--fivth-color);
+    cursor: pointer;
+}
+
+.container-bl{
+   width: 100%;
+   height: auto;
+   padding:40px 46px 30px 5px;
+    background-color: var(--primary-color);
+}
+
+.rooms{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 4rem;
+
+}
+
+.rooms ul li a:hover{
+    color: var(--secondry-color);
+    cursor: pointer;
+}
+.shabad h4{
+    border-left: 3px solid var(--secondry-color);
+    padding-left: 10px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:14px;
+    color:var(--fourth-color);
+    padding-left: 5px;
+letter-spacing: 3px;
+ margin-block: 4em;
+}
+.room-2 img{
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+
+.room-2 h4{
+padding-left:1rem;
+letter-spacing: 3px;
+ margin-block:  2.5em;
+}
+
+.room-2 ul li {
+    list-style: none;
+    margin-top:.5rem;
+    padding-block: .25rem;
+}
+
+.room-2 a{
+    color: var(--fourth-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    font-style: normal;
+}
+
+.apple{
+    margin-block: .5rem;
+}
+
+.room-4{
+    color:var(--fourth-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.shabad .ad, .ph{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px; 
+
+}
+
+.room-4 ul li {
+    list-style: none;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.room-4 ul li a{
+    color: var(--fourth-color);
+}
+
+footer{
+    background-color: var(--secondry-color);
+    color:rgb(25, 37, 91);
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    height: 8vh;
+}
